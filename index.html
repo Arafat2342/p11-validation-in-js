@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 0.1">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node.js"></script>
+    <link rel="icon" type="icon/image" href="https://cdn-icons-png.freepik.com/256/14024/14024728.png?semt=ais_hybrid">
+    </head>
+    <body>
+        <h1>Press Enter</h1>
+        <form class="form" name="myname" onsubmit="return validateform(event)">
+            <label>Sign in</label><br>
+            <input type="text" name="fname" placeholder="Email/Username"><br>
+            <input id="age" type="number" placeholder="age" min="18" required><br>
+            <div style="text-align: left;margin: 1.3rem;">
+            <a href="#">forgot username or email?</a>
+            </div>
+            <p id="message"></p><br>
+            <p id="message1"></p><br>
+            <div class="submit-div">
+            <button value="submit" class="submit-btn" onclick="checker()">Next</button>
+            </div>
+        </form>
+        <div class="card"></div>
+    </body>
+</html>
